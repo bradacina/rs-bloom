@@ -1,0 +1,2 @@
+- integer overflow in rust in lookup3
+- https://doc.rust-lang.org/std/num/struct.Wrapping.html rotate_left - to replace rot() in lookup3

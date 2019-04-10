@@ -28,6 +28,9 @@ fn driver5() {
     c = lookup3::hashlittle(b"Four score and seven years ago", c);
     println!("hash is {:x}", c); /* e3607cae */
 
+    let (b, c) = lookup3::hashlittle2(b"", 0xdeadbeef, 0xdeadbeef);
+    println!("hash is {:x} {:x}", c, b);
+
     //   b=0xdeadbeef, c=0xdeadbeef, hashlittle2("", 0, &c, &b);
     //   printf("hash is %.8lx %.8lx\n", c, b);   /* 9c093ccd bd5b7dde */
     //   b=0, c=0, hashlittle2("Four score and seven years ago", 30, &c, &b);
